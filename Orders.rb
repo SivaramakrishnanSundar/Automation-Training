@@ -1,4 +1,4 @@
-class Orders
+class orders
 
  attr_reader :email, :total
 
@@ -11,7 +11,7 @@ class Orders
      "#{email}: $#{total}"
    end
 
-orders= []
+orders=[]
 1.upto(8) do |n|
 orders<<Orders.new("customer#{n}@email.com", n*10)
 end
